@@ -1,0 +1,188 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+
+body{
+    background-color: rgb(47, 172, 194);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+
+.juego{
+    display: flex;
+    width: 65%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.jugadores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    padding: 1rem;
+    background-color: grey;
+}
+
+.jugadores-titulo{
+    font-family: 'Carter One', cursive;
+}
+
+
+
+.puntos{
+    border: 1px solid black;
+    border-radius: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: white;
+    font-family: 'Carter One', cursive;
+}
+
+.juego-pestañas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.arma-seleccionada img{
+    width: 40%;
+    border: 1px solid black;
+    border-radius: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    background-color: white;
+}
+
+.titulo-armas{
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    font-family: 'Carter One', cursive;
+    text-align: center;
+}
+
+
+/* comienzan las armas */
+.armas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+    gap: 3rem;
+}
+
+
+.armas-individuales{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+.armas-individuales :active{
+    box-shadow: none;
+}
+
+.armas-individuales img{
+    max-width: 30%;
+}
+
+.hidden{
+    visibility: hidden;
+}
+
+.armas-individuales button{
+    max-width: 18rem;
+    cursor: pointer;
+    border-radius: 2rem;
+    box-shadow: 4px 4px 0px 1px rgb(0, 0, 0);
+}
+
+.piedra button{background-color: red;}
+.piedra :hover{background-color: rgb(248, 89, 89);}
+
+.papel button{background-color: rgb(32, 32, 255);}
+.papel :hover{background-color: rgb(110, 110, 253);}
+
+.tijera button{background-color: darkgreen;}
+.tijera :hover{background-color: rgb(40, 158, 40);}
+
+/* VS */
+
+.vs{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Carter One', cursive;
+    font-size: 5rem;
+    text-align: center;;
+}
+
+
+#resultado{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    background-color: white;
+    border-radius: 2rem;
+    border: 2px solid black !important;;
+}
+
+.reglas{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.nVictorias{
+    font-size: 2.5rem;
+}
+
+.ocultar{
+    display: none;
+}
+
+.volver-a-jugar{
+
+    margin-top: 5rem;
+}
+
+.volver-a-jugar button{
+    font-size: 4rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-family: 'Carter One', cursive;
+    background-color: rgb(145, 22, 145);
+    box-shadow: 4px 4px 0px 1px rgb(0, 0, 0);
+
+}
+
+.ganaste-perdiste{
+    font-size: 4rem;
+    font-family: 'Carter One', cursive;
+    color: white;
+    text-align: center;
+    text-shadow: 5px 5px 5px black;
+}
+

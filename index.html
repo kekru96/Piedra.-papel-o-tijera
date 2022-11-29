@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Carter+One&display=swap" rel="stylesheet">
+    <title>Piedra, papel, tijera</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="juego">
+
+            <div class="yo jugadores">
+                <h2 class="jugadores-titulo">YO</h2>
+                <div class="jugadores-armas-puntos">
+                    <div class="mi-arma-seleccionada arma-seleccionada juego-pestañas hidden">
+                        <img id="img-arma" src="./Fotos/piedra.png">
+                    </div>
+                    <div class="mis-puntos puntos juego-pestañas">
+                        <h2>Victorias</h2>
+                        <h3 id="misVictorias" class="nVictorias">0</h3>
+
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="vs" class="vs animacion">
+                <p>-</p>
+            </div>
+
+            <div class="rival jugadores">
+                <h2 class="jugadores-titulo">RIVAL</h2>
+                <div class="jugadores-armas-puntos">
+                    <div class="arma-seleccionada-rival arma-seleccionada juego-pestañas hidden">
+                        <img src="./Fotos/piedra.png" alt="">
+                    </div>
+                    <div class="puntos-rival puntos juego-pestañas">
+                        <h2>Victorias:</h2>
+                        <h3 id="victoriasRival" class="nVictorias">0</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="para-ocultar">
+            <h2 class="titulo-armas">Selecciona una</h2>
+
+            <div class="armas">
+                <div class="piedra armas-individuales">
+                    <button><img src="./Fotos/piedra-removebg-preview.png" alt=""></button>
+                </div>
+
+                <div class="papel armas-individuales">
+                    <button><img src="./Fotos/papel-removebg-preview.png" alt=""></button>
+                </div>
+
+                <div class="tijera armas-individuales">
+                    <button><img src="./Fotos/tijera-removebg-preview.png" alt=""></button>
+                </div>
+            </div>
+            <div class="reglas">
+                <p>Bienvenido al clasico juego de piedra, papel o tijera.</p>
+                <p>Reglas: El jugador que llegue primero a <b>5</b> victorias gana el juego.</p> <br>
+                <p id="resultado">Buena suerte!</p>
+            </div>
+        </div>
+
+        <div class="volver-a-jugar ocultar">
+            <p class="ganaste-perdiste"></p>
+            <button class="volver-a-jugar-boton">Volver a jugar</button>
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
